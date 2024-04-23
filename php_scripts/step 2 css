@@ -1,0 +1,40 @@
+Step 2
+Compose and apply the CSS. Below is an example of my CSS.
+CSS
+/*Dashboard styling */
+    .image-container {
+            display: flex;
+            justify-content: space-around;
+            margin: 10px;
+        }
+        .flex-item {
+            position: relative;
+            width: 30%
+            height: auto;
+            margin: 0 10px; /* Adjusted margin */
+        }
+        .title-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        width: 100%;
+}
+        .image {
+            width: 100%;
+            height: auto;
+            display: block;
+             opacity: 0.6; /* Adjust the opacity value (0 to 1) as needed */
+        }
+        .overlay-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: rgba(34, 34, 34, 1); /* Use RGBA to set the color with full opacity */
+            font-size: 30px;
+            font-weight: bold;
+            text-align: center;
+            z-index: 1; /* Ensure text appears over the image */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Drop shadow with 2px horizontal offset, 2px vertical offset, 4px blur, and 0.5 alpha */
