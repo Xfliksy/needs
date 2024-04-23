@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Riget Zoo Adventures</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <header>   
+        <div class="nav">
+            <a href="home.html">Home</a>
+            <a href="visit.html">Visit Us</a>
+            <a href="hotel.html">Hotel</a>
+            <a href="booking.html">Booking</a>
+            <a href="register.html">Register</a>
+            <a href="login.html">Login</a>
+        </div>
+    </header>
+
+    <div class="form-title">
+        <h1>Register</h1>
+    </div>
+
+    <div class="form-register">
+        <form action="/php_scripts/register.php" method="post">
+            <label for="username">Username:</label><br>
+            <input type="text" id="username" name="username" required><br><br>
+          
+            <label for="first_name">First Name:</label><br>
+            <input type="text" id="first_name" name="first_name" required><br><br>
+
+            <label for="surname">Surname Name:</label><br>
+            <input type="text" id="surname" name="surname" required><br><br>
+            
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="age">Age:</label><br>
+            <input type="date" id="age" name="age" required><br><br>
+          
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password" required><br><br>
+
+          
+            <button type="submit">Register</button>
+        </form>
+    </div>
+
+</body>
+</html>
